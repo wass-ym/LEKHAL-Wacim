@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainnav.css">
+    <script defer src="mainnav.js"></script>
+</head>
+<body>
+
+     <header id="mainnav" aria-label="Navigation principale">
+    <div class="mainnav__inner">
+      <div class="mainnav__title" aria-label="Identité">
+        <img src="logo_wass.svg" alt="Logo Wass" class="mainnav__logo" />
+        LEKHAL / Wacim / 24011398
+      </div>
+
+      <button
+        class="mainnav__burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="mainnav-drawer"
+        aria-expanded="false"
+      >
+        <span class="mainnav__burgerBars" aria-hidden="true">
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="mainnav__overlay" data-mainnav-close tabindex="-1" hidden></div>
+
+    <aside
+      id="mainnav-drawer"
+      class="mainnav__drawer"
+      aria-label="Menu"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="mainnav__drawerHeader">
+        <div class="mainnav__drawerTitle">Menu</div>
+        <button class="mainnav__close" type="button" aria-label="Fermer le menu" data-mainnav-close>
+          ✕
+        </button>
+      </div>
+
+      <nav class="mainnav__menu" aria-label="Liens">
+        <a class="mainnav__link" href="index.html">Accueil</a>
+        <a class="mainnav__link" href="exercise-1.html">Exercise 1</a>
+        <a class="mainnav__link" href="notes tp1.pdf">Notes exercise 1</a>
+        <a class="mainnav__link" href="exercise-2.html">Exercise 2</a>
+         <a class="mainnav__link" href="notes tp2.pdf">Notes exercise 2</a>
+        <a class="mainnav__link" href="exercise-3.html">Exercise 3</a>
+         <a class="mainnav__link" href="notes tp3.pdf">Notes exercise 3</a>
+        <a class="mainnav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="mainnav__drawerFooter">
+        <small>powered by Wass</small>
+      </div>
+    </aside>
+  </header>
+
+    
+   <h1>Exercice de vérification des prérequis HTML</h1>
+    <p>
+        Je m'appelle Prénom LEKHAL Wacim. Je suis étudiant en master CEN et je révise les bases du langage HTML à travers cet exercice.
+    </p> 
+
+     <ul>
+        <li>Structurer une page web</li>
+        <li>Utiliser les balises HTML de base</li>
+        <li>Créer du contenu lisible</li>
+    </ul>
+
+     <p>
+        Ressource recommandée pour apprendre le HTML :
+        <a href="https://developer.mozilla.org/fr/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" target="_blank">
+            Documentation HTML sur MDN Web Docs
+        </a>
+    </p>
+
+     <img src="C:\Users\lekha\Desktop\exercise html 1\138060.jpg" alt="TOTO" width="600" height="400">
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wass — Graphic Designer & Visual Artist</title>
+
+  <link rel="stylesheet" href="mainnav.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script defer src="mainnav.js"></script>
+</head>
+
+<body>
+
+  <div class="fixed-sidebar fixed-sidebar--left">
+    <img src="Frame 118.png" alt="Social Links" class="sidebar-img">
+  </div>
+
+  <a href="contact.html" class="fixed-sidebar fixed-sidebar--right">
+    <img src="C O N T A C T M E.png" alt="Contact Me" class="sidebar-img">
+  </a>
+
+  <div class="bg-scroller" aria-hidden="true">
+    <div class="bg-scroller__track"></div>
+  </div> 
+
+  <header id="mainnav" aria-label="Navigation principale">
+    <div class="mainnav__inner">
+      <div class="mainnav__title" aria-label="Identité">
+        <img src="logo_wass.svg" alt="Logo Wass" class="mainnav__logo" />
+        LEKHAL / Wacim / 24011398
+      </div>
+
+      <button
+        class="mainnav__burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="mainnav-drawer"
+        aria-expanded="false"
+      >
+        <span class="mainnav__burgerBars" aria-hidden="true">
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="mainnav__overlay" data-mainnav-close tabindex="-1" hidden></div>
+
+    <aside
+      id="mainnav-drawer"
+      class="mainnav__drawer"
+      aria-label="Menu"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="mainnav__drawerHeader">
+        <div class="mainnav__drawerTitle">Menu</div>
+        <button class="mainnav__close" type="button" aria-label="Fermer le menu" data-mainnav-close>
+          ✕
+        </button>
+      </div>
+
+      <nav class="mainnav__menu" aria-label="Liens">
+        <a class="mainnav__link" href="index.html">Accueil</a>
+        <a class="mainnav__link" href="exercise-1.html">Exercise 1</a>
+        <a class="mainnav__link" href="notes tp1.pdf">Notes exercise 1</a>
+        <a class="mainnav__link" href="exercise-2.html">Exercise 2</a>
+         <a class="mainnav__link" href="notes tp2.pdf">Notes exercise 2</a>
+        <a class="mainnav__link" href="exercise-3.html">Exercise 3</a>
+         <a class="mainnav__link" href="notes tp3.pdf">Notes exercise 3</a>
+        <a class="mainnav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="mainnav__drawerFooter">
+        <small>powered by Wass</small>
+      </div>
+    </aside>
+  </header>
+
+  <main class="page" id="top">
+    <article class="article" aria-label="Wass - Portfolio">
+      <header class="article__header" id="intro">
+        <h1 class="article__title">Wass — Graphic Designer & Visual Artist</h1>
+        <p class="article__chapo">
+          Between print and digital, I craft images, identities, and experiences that connect emotion and design.
+        </p>
+      </header>
+
+      <figure class="article__hero">
+        <img
+          src="PORTRAIT.jpg"
+          alt="Wass Visual Works"
+          loading="lazy"
+        />
+        <figcaption>Visual Artist and Graphic Designer based in Paris.</figcaption>
+      </figure>
+
+      <section class="article__body" aria-label="Bio et Services">
+        <h2>About Me</h2>
+        <p>
+          Wass is a visual artist and graphic designer working across print and digital media. Originally from Algiers and trained at the École des Beaux-Arts d’Alger, I blend fine art sensitivity with modern design thinking.
+        </p>
+        <p>
+          Currently based in Paris, I’m pursuing a Master’s degree in Creation and Digital Publishing (CEN) at the University of Paris 8, after earning a Bachelor’s in Fine Arts. My work bridges traditional artistic practice and contemporary digital aesthetics, exploring how visual language evolves across mediums.
+        </p>
+
+        <figure class="article__float article__float--right">
+          <img src="bee.jpg" alt="Graphic Design work" loading="lazy" />
+          <figcaption>Design & Editorial Layout</figcaption>
+        </figure>
+
+        <h2>Graphic Design – Print & Digital</h2>
+        <p>
+          I create visual identities, editorial layouts, and communication materials that combine clarity, emotion, and aesthetic precision. From posters and branding to social media content, my approach balances conceptual depth with visual impact.
+        </p>
+
+        <h2>Art Practice – Drawing & Mixed Media</h2>
+        <p>
+          My artistic work spans drawing, illustration, and experimental compositions inspired by urban textures, memory, and cultural identity. Whether on paper or canvas, I explore how color, line, and gesture can express rhythm and silence.
+        </p>
+
+        <figure class="article__float article__float--left">
+          <img src="photography.jpg" alt="Mixed Media Art" loading="lazy" />
+          <figcaption>Photography</figcaption>
+        </figure>
+
+        <h2>Photography & Visual Experiments</h2>
+        <p>
+          Photography acts as a visual journal within my process—capturing spontaneous moments, textures, and human traces in urban environments. These images often inform my graphic and artistic projects, creating a dialogue between the real and the reimagined.
+        </p>
+
+        <h2 id="digital">Digital Creation & UI/UX</h2>
+        <p>
+          Currently, I’m developing projects that intersect art and digital interfaces, integrating motion design, coding, and interactive composition. My focus lies in translating the tactile feel of art into digital experiences that remain human-centered and poetic.
+        </p>
+
+        <div class="article__gallery" aria-label="Gallery">
+          <figure class="article__card">
+            <img src="ui1.png" alt="Portfolio item 1" loading="lazy" />
+            <figcaption>Visual Project 01</figcaption>
+          </figure>
+          <figure class="article__card">
+            <img src="ui2.png" alt="Portfolio item 2" loading="lazy" />
+            <figcaption>Visual Project 02</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <footer class="article__footer">
+        <a class="article__backTop" href="#top">Back to top</a>
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    const track = document.querySelector('.bg-scroller__track');
+    window.addEventListener('scroll', () => {
+      const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      const newDuration = 30 - (scrollPercent * 10); 
+      if (track) track.style.animationDuration = `${newDuration}s`;
+    });
+  </script>
+
+</body>
+</html>

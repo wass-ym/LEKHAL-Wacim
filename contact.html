@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LEKHAL Wacim</title>
+    <link rel="stylesheet" href="mainnav.css">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="mainnav.js"></script>
+</head>
+<body>
+
+    <header id="mainnav" aria-label="Navigation principale">
+    <div class="mainnav__inner">
+      <div class="mainnav__title" aria-label="Identité">
+        <img src="logo_wass.svg" alt="Logo Wass" class="mainnav__logo" />
+        LEKHAL / Wacim / 24011398
+      </div>
+
+      <button
+        class="mainnav__burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="mainnav-drawer"
+        aria-expanded="false"
+      >
+        <span class="mainnav__burgerBars" aria-hidden="true">
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+          <span class="mainnav__bar"></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="mainnav__overlay" data-mainnav-close tabindex="-1" hidden></div>
+
+    <aside
+      id="mainnav-drawer"
+      class="mainnav__drawer"
+      aria-label="Menu"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="mainnav__drawerHeader">
+        <div class="mainnav__drawerTitle">Menu</div>
+        <button class="mainnav__close" type="button" aria-label="Fermer le menu" data-mainnav-close>
+          ✕
+        </button>
+      </div>
+
+      <nav class="mainnav__menu" aria-label="Liens">
+        <a class="mainnav__link" href="index.html">Accueil</a>
+        <a class="mainnav__link" href="exercise-1.html">Exercise 1</a>
+        <a class="mainnav__link" href="exercise-2.html">Exercise 2</a>
+        <a class="mainnav__link" href="exercise-3.html">Exercise 3</a>
+        <a class="mainnav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="mainnav__drawerFooter">
+        <small>Navigation demo</small>
+      </div>
+    </aside>
+  </header>
+
+    <main class="contact-wrapper">
+        <h1>Contactez-nous</h1>
+
+        <form method="post" class="contact-form">
+
+            <fieldset class="form-section">
+                <legend>Vos coordonnées</legend>
+                
+                <div class="form-group">
+                    <label for="nom">Nom :*</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom :*</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone :*</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :*</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="objet">Objet :*</label>
+                    <input type="text" id="objet" name="objet" placeholder="Objet" required/>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Votre message</legend>
+                <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            </fieldset>
+
+            <p class="required-note">* Tous les champs sont obligatoires</p>
+
+            <div class="buttons">
+                <button type="reset" class="btn-reset">EFFACER</button>
+                <button type="submit" class="btn-submit">ENVOYER</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

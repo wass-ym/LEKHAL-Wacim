@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-image: url("bg.png");
+  background-repeat: repeat;
+}
+
+#titre {
+  text-align: center;
+}
+
+#cover img {
+  display: block;
+  margin: 40px auto 20px auto;
+}
+
+#titre h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0 0 40px 0;
+}
+
+#text {
+  width: 600px;
+  margin: 0 auto 60px auto;
+  background-color: white;
+  padding: 40px 60px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+#text p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}

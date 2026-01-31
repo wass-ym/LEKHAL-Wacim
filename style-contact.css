@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 900px;
+  margin: 40px auto;
+}
+
+.titre {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.bloc {
+  border: 1px solid #ccc;
+  padding: 25px 40px;
+  margin-bottom: 25px;
+}
+
+.bloc-titre {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.bloc-ligne {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bloc-label {
+  width: 140px;
+  font-size: 14px;
+}
+
+.etoile {
+  color: #000;
+}
+
+.bloc-champ {
+  flex: 1;
+  height: 26px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  padding: 4px 6px;
+  box-sizing: border-box;
+}
+
+.bloc-message-zone {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 150px;
+  padding: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.note {
+  text-align: center;
+  font-size: 12px;
+  margin: 15px 0 30px;
+}
+
+.boutons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  width: 180px;
+  height: 36px;
+  background: #000;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
